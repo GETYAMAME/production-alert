@@ -19,16 +19,16 @@ function scrollTop() {
 const body = document.querySelector("body");
 
 // ボタン(top)を作成
-let top_button = document.createElement("button");
-top_button.textContent = "一番上へスクロール";
+let top_button = document.createElement("div");
+top_button.textContent = "本番環境";
 top_button.addEventListener("click", scrollTop); // クリックされたときの処理を追加
-top_button.className = "page_top_btn"; // CSSで右下に固定するためにクラス名を設定する
+top_button.className = "page_top_alert"; // CSSで右下に固定するためにクラス名を設定する
 
 // ボタン(bottom)を作成
-let bottom_button = document.createElement("button");
-bottom_button.textContent = "一番下へスクロール";
+let bottom_button = document.createElement("div");
+bottom_button.textContent = "本番環境";
 bottom_button.addEventListener("click", scrollBottom); // クリックされたときの処理を追加
-bottom_button.className = "page_bottom_btn"; // CSSで右下に固定するためにクラス名を設定する
+bottom_button.className = "page_bottom_alert"; // CSSで右下に固定するためにクラス名を設定する
 
 // ボタンをbodyに追加
 body.append(top_button);
