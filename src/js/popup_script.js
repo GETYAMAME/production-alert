@@ -7,8 +7,8 @@ window.onload = async () => {
   // 本番ドメインを取得
   const defaults = { domain: { value: "" } };
   try {
-    const storageData = await getStorageData(defaults);
-    const domains = storageData.domain.value;
+    const storage_data = await getStorageData(defaults);
+    const domains = storage_data.domain.value;
     if (domains) {
       // ドメインを表示
       document.getElementById("domains").value = domains;
