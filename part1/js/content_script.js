@@ -36,7 +36,7 @@ window.onload = async () => {
   try {
     const storageData = await getStorageData(defaults);
     const prod_domains = storageData.domain.value;
-    const prod_domains_ary = prod_domains.split(",");
+    const prod_domains_ary = prod_domains.split(/\n/);
     const current_domain = location.hostname; // 現在表示している画面のドメイン名を取得
     // 本番ドメインに含まれている場合
     if (prod_domains_ary.includes(current_domain)) {

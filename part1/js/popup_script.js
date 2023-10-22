@@ -23,14 +23,28 @@ document.getElementById("hold").onclick = async function () {
   // ドメインを取得
   let domains = document.getElementById("domains").value;
   // エラーチェック処理
-
+  if (!domains) {
+    document.getElementById("message").textContent =
+      "メッセージ：ドメインを入力してください";
+    return;
+  }
+  // ドメイン形式チェック
+  const domains_ary = domains.split(/\n/);
+  for (let i = 0; i < domains_ary.length; i++) {
+    if (!isValidDomain(domains_ary[i])) {
+      document.getElementById("message").textContent =
+        "メッセージ：" + (i + 1) + "行目のドメイン形式が不正です";
+      return;
+    }
+  }
   // localStorageに保存
   let entity = {};
   entity.domain = {
     value: domains,
   };
   await chrome.storage.local.set(entity, function () {
-    alert("保存しました");
+    document.getElementById("message").textContent =
+      "メッセージ：保存しました！";
   });
 };
 
@@ -45,4 +59,11 @@ function getStorageData(defaults) {
       }
     });
   });
+}
+
+// ドメイン形式チェック
+function isValidDomain(domain) {
+  // 正規表現を使用してドメイン形式を検証
+  const pattern = /^(?:(?![_.-])[\w-]+(?<![_.-])){1,}\.[a-z]{2,}$/;
+  return pattern.test(domain);
 }
