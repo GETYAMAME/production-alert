@@ -5,7 +5,7 @@
 // 初期表示時の処理
 window.onload = async () => {
   // 本番ドメインを取得
-  let defaults = { domain: { value: "" } };
+  const defaults = { domain: { value: "" } };
   try {
     const storageData = await getStorageData(defaults);
     const domains = storageData.domain.value;
@@ -21,7 +21,7 @@ window.onload = async () => {
 // 保存ボタン押下時処理
 document.getElementById("hold").onclick = async function () {
   // ドメインを取得
-  let domains = document.getElementById("domains").value;
+  const domains = document.getElementById("domains").value;
   // エラーチェック処理
   if (!domains) {
     document.getElementById("message").textContent =
@@ -38,7 +38,7 @@ document.getElementById("hold").onclick = async function () {
     }
   }
   // localStorageに保存
-  let entity = {};
+  const entity = {};
   entity.domain = {
     value: domains,
   };

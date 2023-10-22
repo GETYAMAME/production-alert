@@ -32,7 +32,7 @@ function getStorageData(defaults) {
 // 初期表示時の処理
 window.onload = async () => {
   // 本番ドメインを取得
-  let defaults = { domain: { value: "" } };
+  const defaults = { domain: { value: "" } };
   try {
     const storageData = await getStorageData(defaults);
     const prod_domains = storageData.domain.value;
@@ -44,13 +44,13 @@ window.onload = async () => {
       const body = document.querySelector("body");
 
       // 上部の警告を作成
-      let top_button = document.createElement("div");
+      const top_button = document.createElement("div");
       top_button.textContent = "本番環境";
       top_button.addEventListener("click", clickTop); // クリックされたときの処理を追加
       top_button.id = "page_top_alert";
 
       // 下部の警告を作成
-      let bottom_button = document.createElement("div");
+      const bottom_button = document.createElement("div");
       bottom_button.textContent = "本番環境";
       bottom_button.addEventListener("click", clickBottom); // クリックされたときの処理を追加
       bottom_button.id = "page_bottom_alert";
