@@ -19,7 +19,7 @@ window.onload = async () => {
 };
 
 // 保存ボタン押下時処理
-document.getElementById("hold").onclick = async function () {
+document.getElementById("hold").onclick = function () {
   // ドメインを取得
   const domains = document.getElementById("domains").value;
   // エラーチェック処理
@@ -42,7 +42,7 @@ document.getElementById("hold").onclick = async function () {
   entity.domain = {
     value: domains,
   };
-  await chrome.storage.local.set(entity, function () {
+  chrome.storage.local.set(entity, function () {
     document.getElementById("message").textContent =
       "メッセージ：保存しました！";
   });
