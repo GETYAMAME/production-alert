@@ -1,0 +1,22 @@
+/* 一番上へスクロールするボタン */
+.page_top_btn {
+  position: fixed;
+  bottom: 75px;
+  right: 10px;
+  z-index: 999;
+  cursor: pointer;
+}
+
+/* 一番下へスクロールするボタン */
+.page_bottom_btn {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 999;
+  cursor: pointer;
+}
+
+/* 滑らかにスクロールするための記述(無くてもよい) */
+html {
+  scroll-behavior: smooth;
+}
