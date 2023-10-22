@@ -26,5 +26,6 @@
       "resources": ["img/*"],
       "matches": ["<all_urls>"]
     }
-  ]
+  ],
+  "permissions": ["storage"]
 }

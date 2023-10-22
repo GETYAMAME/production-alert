@@ -1,11 +1,33 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>NASA Picture of the Day</title>
+    <title>ドメイン入力欄</title>
+    <style>
+      body {
+        height: 150px;
+        width: 350px;
+      }
+    </style>
   </head>
   <body>
-    <div>
-      <img src="/images/stars.jpeg" alt="stars" />
+    <div style="padding: 2px">
+      本番環境用のドメインを入力してください。<br />
+      複数ある場合は改行してください。
+    </div>
+    <div style="padding: 2px">
+      <textarea
+        id="domains"
+        rows="5"
+        cols="40"
+        placeholder="example.com&#13;&#10;example.jp"
+      ></textarea>
+    </div>
+    <div style="padding: 2px">
+      <button id="hold">保存</button>
+    </div>
+    <div style="padding: 2px">
+      <p id="message"></p>
     </div>
   </body>
+  <script type="text/javascript" src="../js/popup_script.js"></script>
 </html>
