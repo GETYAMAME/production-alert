@@ -1,5 +1,5 @@
-/* 一番上へスクロールするボタン */
-.page_top_alert {
+/* 上部の警告 */
+#page_top_alert {
   background-color: rgba(255, 0, 0, 0.8);
   font-size: 20px;
   font-weight: bold;
@@ -14,8 +14,8 @@
   cursor: pointer;
 }
 
-/* 一番下へスクロールするボタン */
-.page_bottom_alert {
+/* 下部の警告 */
+#page_bottom_alert {
   background-color: rgba(255, 0, 0, 0.8);
   font-size: 20px;
   font-weight: bold;
@@ -28,9 +28,4 @@
   right: 0px;
   z-index: 999999;
   cursor: pointer;
-}
-
-/* 滑らかにスクロールするための記述(無くてもよい) */
-html {
-  scroll-behavior: smooth;
 }
