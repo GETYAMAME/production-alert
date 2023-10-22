@@ -13,7 +13,7 @@ window.onload = async () => {
       // ドメインを表示
       document.getElementById("domains").value = domains;
     }
-  } catch (e) {
+  } catch (error) {
     alert("Error fetching data: " + error);
   }
 };
