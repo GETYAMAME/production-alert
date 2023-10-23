@@ -1,6 +1,6 @@
 {
   "name": "本番環境アラート",
-  "version": "0.0.0.1",
+  "version": "1.0.0",
   "manifest_version": 3,
   "description": "指定した本番環境のドメインにアクセスした際に警告を出します",
   "icons": {
