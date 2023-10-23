@@ -18,5 +18,6 @@ Chromeの場合：
 
 ３）画面上部の警告を移動させたい場合、クリックすると下部へ移動します。
 
-<img width="720" alt="スクリーンショット 2023-10-24 1 15 23" src="https://github.com/GETYAMAME/production-alert/assets/9640392/927715ac-c30c-42cb-b186-07458cbc3944">
-![Frame 59](https://github.com/GETYAMAME/production-alert/assets/9640392/a5470493-0bed-438f-bbfd-fd5ee123eb26)
+<img width="720" src="https://github.com/GETYAMAME/production-alert/assets/9640392/927715ac-c30c-42cb-b186-07458cbc3944">
+
+<img width="720" src="https://github.com/GETYAMAME/production-alert/assets/9640392/23ebcce2-ad14-4a39-a807-4badcd505d57">
