@@ -13,8 +13,7 @@ Chromeの場合：
 ## 使い方
 
 １）プラグインのアイコンをクリックして、本番環境のドメインを入力し、保存します。
-<img width="720" alt="スクリーンショット 2023-10-24 1 15 23" src="https://github.com/GETYAMAME/production-alert/assets/9640392/927715ac-c30c-42cb-b186-07458cbc3944">
-
 ２）本番環境のURLにアクセスすると「本番環境」という警告が文字が画面上部に表示されます。（既に本番環境の画面を表示している場合にはプラグイン設定後にリロードしてください）
-<img width="720" alt="スクリーンショット 2023-10-24 1 16 10" src="https://github.com/GETYAMAME/production-alert/assets/9640392/ffd653b8-e434-408b-aed1-ea922d5552bd">
 ３）画面上部の警告を移動させたい場合、クリックすると下部へ移動します。
+<img width="720" alt="スクリーンショット 2023-10-24 1 15 23" src="https://github.com/GETYAMAME/production-alert/assets/9640392/927715ac-c30c-42cb-b186-07458cbc3944">
+<img width="720" alt="スクリーンショット 2023-10-24 1 16 10" src="https://github.com/GETYAMAME/production-alert/assets/9640392/ffd653b8-e434-408b-aed1-ea922d5552bd">
