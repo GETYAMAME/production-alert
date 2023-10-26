@@ -2,6 +2,9 @@
 
 指定した本番環境のドメインにアクセスした際に画面上に警告を出す Edge/Chrome 用のプラグイン
 
+[Edge版]
+https://microsoftedge.microsoft.com/addons/detail/%E6%9C%AC%E7%95%AA%E7%92%B0%E5%A2%83%E3%82%A2%E3%83%A9%E3%83%BC%E3%83%88/oppoiibdfamkoigbiigamnehbjjmgbkp?hl=ja
+
 
 ## ブラウザの拡張機能への追加方法
 
